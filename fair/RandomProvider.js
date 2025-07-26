@@ -2,12 +2,10 @@ const crypto = require('crypto');
 
 class RandomProvider {
   static getRandomInt(maxExclusive) {
-    // Только встроенный криптостойкий способ!
     return crypto.randomInt(0, maxExclusive);
   }
 
   static getRandomKey(length = 32) {
-    // 256 бит (32 байта) по умолчанию
     return crypto.randomBytes(length);
   }
 }
