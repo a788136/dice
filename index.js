@@ -13,7 +13,7 @@ try {
 
 
   const engine = new GameEngine(diceList);
-  engine.run();
+  engine.run(); 
 
 } catch (e) {
   console.error('Error:', e.message);

@@ -7,3 +7,4 @@ class HmacCalculator {
 }
 
 module.exports = HmacCalculator;
+
