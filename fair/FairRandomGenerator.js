@@ -4,8 +4,8 @@ const HmacCalculator = require('./HmacCalculator');
 class FairRandomGenerator {
   constructor(maxValueExclusive) {
     this.max = maxValueExclusive;
-    this.computerValue = crypto.randomInt(0, this.max); // прямо тут!
-    this.secretKey = crypto.randomBytes(32);            // прямо тут!
+    this.computerValue = crypto.randomInt(0, this.max); 
+    this.secretKey = crypto.randomBytes(32);            
     this.hmac = HmacCalculator.calculateHMAC(this.computerValue, this.secretKey);
   }
 
